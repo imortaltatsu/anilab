@@ -1,0 +1,53 @@
+# ---- Model weights & large binaries (never commit) ----
+weights/*
+!weights/.gitkeep
+!weights/README.md
+saas/weights/
+saas/engines/**/ckpt/
+saas/engines/**/pretrained_weights/
+saas/engines/**/checkpoints/
+saas/engines/**/mini_trainset/
+saas/engines/**/preprocessed/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.onnx
+*.gguf
+
+# ---- Runtime storage & databases ----
+saas/storage/
+results/
+assets/
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# ---- Virtualenvs & dependency dirs ----
+.venv/
+**/.venv/
+.uv/
+node_modules/
+**/node_modules/
+saas/frontend/dist/
+
+# ---- Vendored engine upstream git history (renamed to keep vendoring clean) ----
+**/.git.bak/
+
+# ---- Logs & caches ----
+*.log
+logs/
+saas/engines/**/logs/
+saas/engines/**/lightning_logs/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.python-version
+
+# ---- OS / editor ----
+.DS_Store
+.idea/
+.vscode/
+*.swp
